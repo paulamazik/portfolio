@@ -1,0 +1,583 @@
+* {
+      box-sizing: border-box;
+}
+ 
+html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+}
+
+ 
+.home {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+   font-family: "Oswald", sans-serif;
+      font-weight: 200;
+    background: url(../images/background.jpg);
+      background-position: center;
+      background-size: cover;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+    
+}
+
+.main {
+     margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+   font-family: "Oswald", sans-serif;
+      font-weight: 200;
+        background: url(../images/background2.jpg);
+      background-position: center;
+      background-size: cover;
+     background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+    
+}
+
+body{ 
+  margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+   font-family: "Oswald", sans-serif;
+      font-weight: 200;}
+
+nav {
+      padding: 8px;
+}
+ 
+.logo {
+      float: left;
+      padding: 8px;
+      margin-top: 4px;
+}
+
+.logo{
+     width: 100%;
+  max-width: 200px;
+    height: auto;
+    
+}
+.homelogo{
+    float: left;
+      padding: 8px;
+      margin-top: 4px;
+}
+
+.homelogo{
+       width: 100%;
+  max-width: 200px;
+    height: auto;
+    
+       
+}
+
+
+
+.responsive {
+     width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+ 
+nav ul {
+      float: right;
+}
+ 
+nav ul li {
+      display: inline-block;
+      float: left;
+}
+ 
+nav ul li:not(:first-child) {
+      margin-left: 48px;
+}
+ 
+nav ul li:last-child {
+      margin-right: 24px;
+}
+ 
+nav ul li a {
+      display: inline-block;
+      outline: none;
+      color: #000;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 30px;
+      letter-spacing: 1.2px;
+      font-weight: 600;
+}
+ 
+@media screen and (max-width: 830px) {
+      .logo {
+            padding: 0;
+      }
+ 
+      .nav-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: #fff;
+            opacity: 0;
+            transition: all 0.2s ease;
+      }
+ 
+      .nav-wrapper ul {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+      }
+ 
+      .nav-wrapper ul li {
+            display: block;
+            float: none;
+            width: 100%;
+            text-align: right;
+            margin-bottom: 10px;
+      }
+ 
+      .nav-wrapper ul li:nth-child(1) a {
+            transition-delay: 0.2s;
+      }
+ 
+      .nav-wrapper ul li:nth-child(2) a {
+            transition-delay: 0.3s;
+      }
+ 
+      .nav-wrapper ul li:nth-child(3) a {
+            transition-delay: 0.4s;
+      }
+ 
+      .nav-wrapper ul li:nth-child(4) a {
+            transition-delay: 0.5s;
+      }
+ 
+      .nav-wrapper ul li:not(:first-child) {
+            margin-left: 0;
+      }
+ 
+      .nav-wrapper ul li a {
+            padding: 10px 24px;
+            opacity: 0;
+            color: #000;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            transform: translateX(-20px);
+            transition: all 0.2s ease;
+      }
+ 
+      .nav-btn {
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            display: block;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+            z-index: 9999;
+            border-radius: 50%;
+      }
+ 
+      .nav-btn i {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: #000;
+            border-radius: 2px;
+            margin-left: 14px;
+      }
+ 
+      .nav-btn i:nth-child(1) {
+            margin-top: 16px;
+      }
+ 
+      .nav-btn i:nth-child(2) {
+            margin-top: 4px;
+            opacity: 1;
+      }
+ 
+      .nav-btn i:nth-child(3) {
+            margin-top: 4px;
+      }
+}
+ 
+#nav:checked + .nav-btn {
+      transform: rotate(45deg);
+}
+ 
+#nav:checked + .nav-btn i {
+      background: #000;
+      transition: transform 0.2s ease;
+}
+ 
+#nav:checked + .nav-btn i:nth-child(1) {
+      transform: translateY(6px) rotate(180deg);
+}
+ 
+#nav:checked + .nav-btn i:nth-child(2) {
+      opacity: 0;
+}
+ 
+#nav:checked + .nav-btn i:nth-child(3) {
+      transform: translateY(-6px) rotate(90deg);
+}
+ 
+#nav:checked ~ .nav-wrapper {
+      z-index: 9990;
+      opacity: 1;
+}
+ 
+#nav:checked ~ .nav-wrapper ul li a {
+      opacity: 1;
+      transform: translateX(0);
+}
+ 
+.hidden {
+      display: none;
+}
+
+
+.welcome {
+    margin-top: 50px;
+    align-content: center;
+     width: 100%;
+  max-width: 00px;
+    
+}
+
+.welcometext {
+     font-family: "Oswald", sans-serif;
+ font-size: 40px;
+    font-weight: 600;
+  text-align: center;
+   margin-top: 200px;
+    
+
+
+}
+
+h1{
+     margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Oswald", sans-serif;
+ font-size: 50px;
+    font-weight: 600;
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+}
+
+
+h2 {
+font-family: "Oswald", sans-serif;
+ font-size: 50px;
+    font-weight: 600;
+    position: relative;
+   margin-top: 180px;
+    text-align: center;
+    color: black;
+      margin-left: 10px;
+    margin-right: 10px;
+    
+    
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+ font-size: 30px;
+    position: relative;
+margin-top: -10px;
+    text-align: center;
+     text-align: center;
+    color: black;
+      margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding:  10px;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+@media screen and (max-width: 1600px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.me {
+   
+      margin-top: 100px;
+       width: 80%;
+    max-width: 600px;
+
+    height: auto;
+   
+
+}
+
+h3 {
+    
+font-family: "Oswald", sans-serif;
+ font-size: 60px;
+    font-weight: 600;
+    position: relative;
+   margin-top: 400px;
+    padding: 20px;
+      margin-left: 10px;
+    margin-right: 10px;
+        
+}
+
+
+.btn {
+     background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+    border-radius: 5px;
+    font-family: "Oswald", sans-serif;
+}
+
+.btn:hover{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+.button {
+     background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+    border-radius: 5px;
+    font-family: "Oswald", sans-serif;
+    margin-top: 250px;
+
+}
+
+.button:hover{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.button {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.button {
+  flex: 25%;
+    width:350px;
+    height: 100%;
+    max-width: 500px;
+}
+
+.button {
+  margin-top: 20px;
+  vertical-align: middle;
+}
+
+
+@media screen and (max-width: 1600px) {
+  .button {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .button{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .btn1{
+ position: relative;
+      left:-50px;
+      
+  }
+}
+
+h4 {
+    font-family: "Oswald", sans-serif;
+ font-size: 60px;
+    font-weight: 600;
+    position: relative;
+   margin-top: 25px;
+      margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.goto a{
+     background-color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+    border-radius: 5px;
+    font-family: "Oswald", sans-serif;
+    margin-top: 50px;
+
+}
+
+
+.website1 {
+      
+      margin-top: 30px;
+    padding: 10px;
+       width: 100%;
+  max-width: 800px;
+    height: auto;
+    margin-bottom: 50px;
+    align-content: center;
+}
+
+.description{
+    
+        font-family: "Montserrat", sans-serif;
+ font-size: 20px;
+    position:relative;
+margin-top: 20px;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 1600px) {
+  .description {
+     margin-left: 40px;
+      margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .description{
+ margin-left: 10px;
+      margin-right: 10px;
+  }
+}
+
+.btn1 {
+     
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+    border-radius: 5px;
+    font-family: "Oswald", sans-serif;
+    margin-top: 170px;
+    font-size:3vw;
+    margin-left: -60px;
+   
+}
+
+.btn1:hover{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+.social {
+        width: 100%;
+  max-width: 60px;
+    height: auto;
+    display:inline;  
+    float: left;
+    position: relative;
+top: -300px;
+    margin-left: 20px;
+    
+
+}
+
+@media screen and (max-width: 700px) {
+  .social{
+   width: 50%;
+      position: relative;
+      top: 25px;
+     
+    
+  }
+}
+   
+@media screen and (max-width: 700px) {
+  .logo{
+   width: 60%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .homelogo{
+   width: 90%;
+  }
+}
+
+.madeby{
+     font-family: "Montserrat", sans-serif;
+ font-size: 20px;
+    font-weight: 400;
+ margin-top: 100px;
+      margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.welc {
+     margin-left: 40px;
+    margin-right:40px;
+}
